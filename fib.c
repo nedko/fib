@@ -40,5 +40,7 @@ int main()
     n1 = n;
   }
 
+  //printf("0x%llX\n", (unsigned long long)n);
+
   return ~n & 1;                 /* disable optimization */
 }
