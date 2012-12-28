@@ -9,6 +9,9 @@ clang:
 gcc:
 	gcc -Wall -Wextra -Werror fib.c -O1 -o fib
 
+run:
+	./fib
+
 time:
 	/usr/bin/time -v ./fib
 
