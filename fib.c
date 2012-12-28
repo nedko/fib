@@ -33,13 +33,12 @@ int main()
   n2 = 0;
   n1 = 1;
   i = 0;
-  do
+  while (i++ < UINT32_MAX)
   {
     n = n1 + n2;
     n2 = n1;
     n1 = n;
   }
-  while (i++ < UINT32_MAX);
 
   return ~n & 1;                 /* disable optimization */
 }
