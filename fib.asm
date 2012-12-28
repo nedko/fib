@@ -11,10 +11,10 @@ _start:				;tell linker entry point
 	mov	ebx, 0
 	mov	edx, 1
 _loop:
-	dec	ecx
 	mov	eax, ebx
 	add	eax, edx
 	mov	ebx, edx
+	dec	ecx
 	mov	edx, eax
 	jnz	_loop
 	
