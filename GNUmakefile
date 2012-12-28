@@ -16,7 +16,7 @@ time:
 	/usr/bin/time -v ./fib
 
 strace:
-	/usr/bin/strace ./fib
+	/usr/bin/strace ./fib > /dev/null
 
 disasm:
 	/usr/bin/objdump -d -Mintel ./fib
